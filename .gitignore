@@ -3,3 +3,4 @@ node_modules
 .sass-cache
 *.psd
 app/bower_components
+dist

@@ -145,6 +145,20 @@ module.exports = function (grunt) {
 				}]
 			}
 		},
+    buildcontrol: {
+      options: {
+        dir: 'public',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      ghpages: {
+        options: {
+          remote: 'git@github.com:ghinda/cssoff2013.git',
+          branch: 'gh-pages'
+        }
+      }
+    },
 		concurrent: {
 			server: [
 				'sass:server'
@@ -176,7 +190,8 @@ module.exports = function (grunt) {
 	]);
 
 	grunt.registerTask('default', [
-		'jshint',
-		'build'
+		//'jshint',
+		'build',
+    'buildcontrol'
 	]);
 };

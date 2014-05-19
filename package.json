@@ -13,7 +13,8 @@
 		"grunt-concurrent": "~0.3",
 		"matchdep": "~0.1",
 		"connect-livereload": "~0.2",
-		"grunt-sass": "~0"
+		"grunt-sass": "~0",
+		"grunt-build-control": "0.1.x"
 	},
 	"engines": {
 		"node": ">=0.8.0"
