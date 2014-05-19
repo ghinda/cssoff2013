@@ -97,7 +97,7 @@ module.exports = function (grunt) {
 		sass: {
 			dist: {
 				files: {
-					'.tmp/styles/main.css': '<%= yeoman.app %>/styles/main.scss'
+					'<%= yeoman.dist %>/styles/main.css': '<%= yeoman.app %>/styles/main.scss'
 				}
 			},
 			server: {
