@@ -1,0 +1,10 @@
+{
+	"name": "cssoff2013",
+	"version": "0.0.0",
+	"dependencies": {
+		"bourbon": "~3",
+		"normalize-css": "~2"
+	},
+	"devDependencies": {
+	}
+}
